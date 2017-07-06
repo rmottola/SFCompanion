@@ -1,0 +1,109 @@
+{
+    APPLICATIONICON = "";
+    "APP_DOCUMENT_BASED" = NO;
+    "APP_TYPE" = GORM;
+    "BUILDER_TARGETS" = (
+	all,
+	install,
+	uninstall,
+	clean,
+	distclean,
+	dist
+    );
+    "BUNDLE_IDENTIFIER" = "";
+    "CLASS_FILES" = (
+	"AppController.m",
+	"DBLogger.m",
+	"AsyncTracker.m",
+	"DBInteractiveTool.m",
+	"ProcessMonitor.m",
+	"BatchTracker.m",
+	"QueryCacher.m",
+	"UserExecTracker.m"
+    );
+    COMPILEROPTIONS = "";
+    CPPOPTIONS = "";
+    "CREATION_DATE" = "2012-07-12 11:57:19 +0200";
+    "DOCU_FILES" = (
+    );
+    FRAMEWORKS = (
+    );
+    "HEADER_FILES" = (
+	"AppController.h",
+	"DBLogger.h",
+	"AsyncTracker.h",
+	"DBInteractiveTool.h",
+	"ProcessMonitor.h",
+	"BatchTracker.h",
+	"QueryCacher.h",
+	"UserExecTracker.h"
+    );
+    IMAGES = (
+    );
+    INSTALLDIR = "$(HOME)/GNUstep";
+    INTERFACES = (
+	"SFCompanion.gorm",
+	"AsyncTracker.gorm",
+	"Log.gorm",
+	"ProcessMonitor.gorm",
+	"BatchTracker.gorm",
+	"QueryCacher.gorm",
+	"UserExecTracker.gorm",
+	"Redeployer.gorm"
+    );
+    LANGUAGE = English;
+    LIBRARIES = (
+	"gnustep-base",
+	"gnustep-gui",
+	WebServices,
+	OresmeKit,
+	DataBasinKit
+    );
+    LINKEROPTIONS = "";
+    "LOCALIZED_RESOURCES" = (
+    );
+    MAININTERFACE = "SFCompanion.gorm";
+    MAKEFILEDIR = "$(GNUSTEP_MAKEFILES)";
+    "OBJC_COMPILEROPTIONS" = "";
+    "OTHER_RESOURCES" = (
+    );
+    "OTHER_SOURCES" = (
+	"main.m"
+    );
+    "PRINCIPAL_CLASS" = NSApplication;
+    "PROJECT_AUTHORS" = (
+	"Riccardo Mottola"
+    );
+    "PROJECT_COPYRIGHT" = "Copyright (C) 2012-2017";
+    "PROJECT_COPYRIGHT_DESC" = "Riccardo Mottola";
+    "PROJECT_CREATOR" = multix;
+    "PROJECT_DESCRIPTION" = "SFDC Companion";
+    "PROJECT_DOCUMENTTYPES" = (
+    );
+    "PROJECT_GROUP" = "No group avaliable!";
+    "PROJECT_MAINTAINER" = multix;
+    "PROJECT_NAME" = SFCompanion;
+    "PROJECT_RELEASE" = "0.1";
+    "PROJECT_SUMMARY" = "No summary avaliable!";
+    "PROJECT_TYPE" = Application;
+    "PROJECT_URL" = "";
+    "SEARCH_HEADER_DIRS" = (
+    );
+    "SEARCH_LIB_DIRS" = (
+	"/Local/Library/Libraries",
+	"/Local/Library/Frameworks",
+	"/Local/Library/Libraries",
+	"/Local/Library/Frameworks/DataBasinKit.framework"
+    );
+    SUBPROJECTS = (
+    );
+    "SUPPORTING_FILES" = (
+	"GNUmakefile.preamble",
+	GNUmakefile,
+	"GNUmakefile.postamble",
+	"SFCompanionInfo.plist"
+    );
+    "USER_LANGUAGES" = (
+	English
+    );
+}

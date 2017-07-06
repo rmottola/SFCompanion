@@ -1,0 +1,33 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    DBInteractiveTool = {
+	Actions = (
+	    "show:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "show:",
+	    "update:"
+	);
+	Super = NSObject;
+    };
+    ProcessMonitor = {
+	Actions = (
+	    "update:"
+	);
+	Outlets = (
+	    window,
+	    fieldFuturesQueued,
+	    fieldFuturesProcessing,
+	    fieldBatchQueued,
+	    fieldBatchProcessing,
+	    fieldBatchPreparing,
+	    updateButton
+	);
+	Super = DBInteractiveTool;
+    };
+}

@@ -1,0 +1,33 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    DBInteractiveTool = {
+	Actions = (
+	    "show:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "execute:",
+	    "show:"
+	);
+	Super = NSObject;
+    };
+    QueryCacher = {
+	Actions = (
+	    "execute:"
+	);
+	Outlets = (
+	    win,
+	    querySelector,
+	    limitSelector,
+	    retryButton,
+	    currProgressField,
+	    countField,
+	    iterationField
+	);
+	Super = DBInteractiveTool;
+    };
+}

@@ -1,0 +1,42 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {update = id; }; 
+            CLASS = BatchTracker; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {batchView = OKChart; legendMatrix = NSMatrix; win = NSWindow; }; 
+            SUPERCLASS = DBInteractiveTool; 
+        }, 
+        {
+            ACTIONS = {show = id; }; 
+            CLASS = DBInteractiveTool; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {logger = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {setAxisColor = id; setBackgroundColor = id; setGridColor = id; }; 
+            CLASS = OKChart; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {matrixAction = id; update = id; }; 
+            CLASS = UserExecTracker; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                legendMatrix = NSMatrix; 
+                peakField = NSTextField; 
+                popupGroupBy = NSPopUpButton; 
+                popupJobType = NSPopUpButton; 
+                updateButton = NSButton; 
+                updateProgress = NSProgressIndicator; 
+                usersView = OKChart; 
+                win = NSWindow; 
+            }; 
+            SUPERCLASS = DBInteractiveTool; 
+        }
+    ); 
+    IBVersion = 1; 
+}

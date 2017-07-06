@@ -1,0 +1,75 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    AppController = {
+	Actions = (
+	    "prefCancel:",
+	    "prefOk:",
+	    "doLogin:",
+	    "showFutureCounter:",
+	    "showD153Verifier:",
+	    "showPrintTester:",
+	    "showProcessMonitor:",
+	    "showRedeployer:",
+	    "showLog:"
+	);
+	Outlets = (
+	    faultPanel,
+	    faultTextView,
+	    prefPanel,
+	    prefChoiceScroll,
+	    prefPanelView,
+	    connPrefView,
+	    futurePrefView,
+	    fieldUserName,
+	    fieldPassword,
+	    fieldToken,
+	    popupEnvironment,
+	    fieldFutureLimit
+	);
+	Super = NSObject;
+    };
+    BatchTracker = {
+	Actions = (
+	    "update:"
+	);
+	Outlets = (
+	    batchView,
+	    win,
+	    legendMatrix,
+	    updateButton,
+	    updateProgress
+	);
+	Super = DBInteractiveTool;
+    };
+    DBInteractiveTool = {
+	Actions = (
+	    "show:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "doLogin:",
+	    "prefCancel:",
+	    "prefOk:",
+	    "show:",
+	    "showD153Verifier:",
+	    "showFutureCounter:",
+	    "showLog:",
+	    "showPrintTester:",
+	    "showProcessMonitor:",
+	    "showRedeployer:",
+	    "update:"
+	);
+	Super = NSObject;
+    };
+    OKChart = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSView;
+    };
+}

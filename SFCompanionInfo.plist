@@ -1,0 +1,15 @@
+{
+    ApplicationDescription = "SFDC Companion";
+    ApplicationName = SFCompanion;
+    ApplicationRelease = "0.1";
+    Authors = (
+	"Riccardo Mottola"
+    );
+    Copyright = "Copyright (C) 2012-2017";
+    CopyrightDescription = "Riccardo Mottola";
+    FullVersionID = "0.1";
+    NSExecutable = SFCompanion;
+    NSMainNibFile = "SFCompanion.gorm";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+}

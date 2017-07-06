@@ -1,0 +1,31 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    DBInteractiveTool = {
+	Actions = (
+	    "show:"
+	);
+	Outlets = (
+	    logger
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "redeploy:",
+	    "show:"
+	);
+	Super = NSObject;
+    };
+    Redeployer = {
+	Actions = (
+	    "redeploy:"
+	);
+	Outlets = (
+	    win,
+	    caseField,
+	    currActionField,
+	    currProgressField
+	);
+	Super = DBInteractiveTool;
+    };
+}
