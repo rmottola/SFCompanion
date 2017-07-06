@@ -1,0 +1,32 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {matrixAction = id; update = id; }; 
+            CLASS = BatchTracker; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                batchView = OKChart; 
+                legendMatrix = NSMatrix; 
+                updateButton = NSButton; 
+                updateProgress = NSProgressIndicator; 
+                win = NSWindow; 
+            }; 
+            SUPERCLASS = DBInteractiveTool; 
+        }, 
+        {
+            ACTIONS = {show = id; }; 
+            CLASS = DBInteractiveTool; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {logger = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {setAxisColor = id; setBackgroundColor = id; setGridColor = id; }; 
+            CLASS = OKChart; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

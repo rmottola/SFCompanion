@@ -1,0 +1,33 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {show = id; }; 
+            CLASS = DBInteractiveTool; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {logger = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {selectSeries = id; update = id; }; 
+            CLASS = FutureTracker; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                chartView = OKChart; 
+                legendMatrix = NSMatrix; 
+                peakField = NSTextField; 
+                statWindow = NSWindow; 
+                updateButton = NSButton; 
+                updateProgress = NSProgressIndicator; 
+            }; 
+            SUPERCLASS = DBInteractiveTool; 
+        }, 
+        {
+            ACTIONS = {setAxisColor = id; setBackgroundColor = id; setGridColor = id; }; 
+            CLASS = OKChart; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

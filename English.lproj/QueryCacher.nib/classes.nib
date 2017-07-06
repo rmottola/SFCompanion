@@ -1,0 +1,40 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {show = id; }; 
+            CLASS = DBInteractiveTool; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {logger = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {execute = id; }; 
+            CLASS = QueryCacher; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                countField = NSTextField; 
+                currProgressField = NSTextField; 
+                iterationField = NSTextField; 
+                limitSelector = NSPopUpButton; 
+                querySelector = NSPopUpButton; 
+                retryButton = NSButton; 
+                win = NSWindow; 
+            }; 
+            SUPERCLASS = DBInteractiveTool; 
+        }, 
+        {
+            ACTIONS = {redeploy = id; }; 
+            CLASS = Redeployer; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                caseField = NSTextField; 
+                currActionField = NSTextField; 
+                currProgressField = NSTextField; 
+                win = NSWindow; 
+            }; 
+            SUPERCLASS = DBInteractiveTool; 
+        }
+    ); 
+    IBVersion = 1; 
+}

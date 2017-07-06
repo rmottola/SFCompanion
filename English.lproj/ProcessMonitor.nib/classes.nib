@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {show = id; }; 
+            CLASS = DBInteractiveTool; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {logger = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {update = id; }; 
+            CLASS = ProcessMonitor; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                fieldBatchPreparing = NSTextField; 
+                fieldBatchProcessing = NSTextField; 
+                fieldBatchQueued = NSTextField; 
+                fieldFuturesProcessing = NSTextField; 
+                fieldFuturesQueued = NSTextField; 
+                updateButton = NSButton; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = DBInteractiveTool; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,58 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    AppController = {
+	Actions = (
+	    "showPrefPanel:"
+	);
+	Outlets = (
+	    faultPanel,
+	    faultTextView
+	);
+	Super = NSObject;
+    };
+    DBInteractiveTool = {
+	Actions = (
+	    "show:"
+	);
+	Outlets = (
+	    logger
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "selectBatch:",
+	    "selectFuture:",
+	    "selectQueueable:",
+	    "selectScheduled:",
+	    "selectSeries:",
+	    "selectTotal:",
+	    "show:",
+	    "showPrefPanel:",
+	    "update:"
+	);
+	Super = NSObject;
+    };
+    FutureTracker = {
+	Actions = (
+	    "selectSeries:",
+	    "update:"
+	);
+	Outlets = (
+	    chartView,
+	    statWindow,
+	    peakField,
+	    updateButton,
+	    legendMatrix,
+	    updateProgress
+	);
+	Super = DBInteractiveTool;
+    };
+    OKChart = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSView;
+    };
+}

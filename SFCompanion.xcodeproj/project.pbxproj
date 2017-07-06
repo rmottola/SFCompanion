@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85B5F1741A69540F004FE3AD /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B5F15D1A69540F004FE3AD /* AppController.m */; };
+		85B5F1751A69540F004FE3AD /* BatchTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B5F15F1A69540F004FE3AD /* BatchTracker.m */; };
+		85B5F1771A69540F004FE3AD /* DBInteractiveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B5F1631A69540F004FE3AD /* DBInteractiveTool.m */; };
+		85B5F1781A69540F004FE3AD /* DBLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B5F1651A69540F004FE3AD /* DBLogger.m */; };
+		85B5F1791A69540F004FE3AD /* DBProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B5F1671A69540F004FE3AD /* DBProgress.m */; };
+		85B5F17A1A69540F004FE3AD /* AsyncTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B5F1691A69540F004FE3AD /* AsyncTracker.m */; };
+		85B5F17C1A69540F004FE3AD /* ProcessMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B5F16D1A69540F004FE3AD /* ProcessMonitor.m */; };
+		85B5F17D1A69540F004FE3AD /* QueryCacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B5F16F1A69540F004FE3AD /* QueryCacher.m */; };
+		85B5F17F1A69540F004FE3AD /* UserExecTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B5F1731A69540F004FE3AD /* UserExecTracker.m */; };
+		85B5F1911A6954F0004FE3AD /* OresmeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B5F1901A6954F0004FE3AD /* OresmeKit.framework */; };
+		85B5F1951A6954FB004FE3AD /* DataBasinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B5F1941A6954FB004FE3AD /* DataBasinKit.framework */; };
+		85B5F19A1A6955C2004FE3AD /* WebServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B5F1991A6955C2004FE3AD /* WebServices.framework */; };
+		85B5F1B41A696929004FE3AD /* AsyncTracker.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85B5F1B21A696929004FE3AD /* AsyncTracker.nib */; };
+		85B5F1B91A696E48004FE3AD /* Log.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85B5F1B71A696E48004FE3AD /* Log.nib */; };
+		85CBC4AE1A6E55090029684D /* QueryCacher.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85CBC4AD1A6E55090029684D /* QueryCacher.nib */; };
+		85EE1E9F1A6D02FA00F06505 /* ProcessMonitor.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85EE1E9D1A6D02FA00F06505 /* ProcessMonitor.nib */; };
+		85EE1EB11A6D082B00F06505 /* BatchTracker.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85EE1EAF1A6D082B00F06505 /* BatchTracker.nib */; };
+		85EE1EB71A6D10BF00F06505 /* UserExecTracker.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85EE1EB51A6D10BF00F06505 /* UserExecTracker.nib */; };
+		8D11072A0486CEB800E47090 /* SFCompanion.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* SFCompanion.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SFCompanion.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		85B5F15C1A69540F004FE3AD /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		85B5F15D1A69540F004FE3AD /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		85B5F15E1A69540F004FE3AD /* BatchTracker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BatchTracker.h; sourceTree = "<group>"; };
+		85B5F15F1A69540F004FE3AD /* BatchTracker.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = BatchTracker.m; sourceTree = "<group>"; };
+		85B5F1621A69540F004FE3AD /* DBInteractiveTool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DBInteractiveTool.h; sourceTree = "<group>"; };
+		85B5F1631A69540F004FE3AD /* DBInteractiveTool.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DBInteractiveTool.m; sourceTree = "<group>"; };
+		85B5F1641A69540F004FE3AD /* DBLogger.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DBLogger.h; sourceTree = "<group>"; };
+		85B5F1651A69540F004FE3AD /* DBLogger.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DBLogger.m; sourceTree = "<group>"; };
+		85B5F1661A69540F004FE3AD /* DBProgress.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DBProgress.h; sourceTree = "<group>"; };
+		85B5F1671A69540F004FE3AD /* DBProgress.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DBProgress.m; sourceTree = "<group>"; };
+		85B5F1681A69540F004FE3AD /* AsyncTracker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AsyncTracker.h; sourceTree = "<group>"; };
+		85B5F1691A69540F004FE3AD /* AsyncTracker.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AsyncTracker.m; sourceTree = "<group>"; };
+		85B5F16C1A69540F004FE3AD /* ProcessMonitor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ProcessMonitor.h; sourceTree = "<group>"; };
+		85B5F16D1A69540F004FE3AD /* ProcessMonitor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ProcessMonitor.m; sourceTree = "<group>"; };
+		85B5F16E1A69540F004FE3AD /* QueryCacher.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QueryCacher.h; sourceTree = "<group>"; };
+		85B5F16F1A69540F004FE3AD /* QueryCacher.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QueryCacher.m; sourceTree = "<group>"; };
+		85B5F1721A69540F004FE3AD /* UserExecTracker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UserExecTracker.h; sourceTree = "<group>"; };
+		85B5F1731A69540F004FE3AD /* UserExecTracker.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UserExecTracker.m; sourceTree = "<group>"; };
+		85B5F1901A6954F0004FE3AD /* OresmeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OresmeKit.framework; path = /Library/Frameworks/OresmeKit.framework; sourceTree = "<absolute>"; };
+		85B5F1941A6954FB004FE3AD /* DataBasinKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DataBasinKit.framework; path = /Library/Frameworks/DataBasinKit.framework; sourceTree = "<absolute>"; };
+		85B5F1991A6955C2004FE3AD /* WebServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebServices.framework; path = /Library/Frameworks/WebServices.framework; sourceTree = "<absolute>"; };
+		85B5F1B31A696929004FE3AD /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/AsyncTracker.nib; sourceTree = "<group>"; };
+		85B5F1B81A696E48004FE3AD /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Log.nib; sourceTree = "<group>"; };
+		85CBC4941A6E4E350029684D /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/QueryCacher.nib; sourceTree = "<group>"; };
+		85EE1E9E1A6D02FA00F06505 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ProcessMonitor.nib; sourceTree = "<group>"; };
+		85EE1EB01A6D082B00F06505 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/BatchTracker.nib; sourceTree = "<group>"; };
+		85EE1EB61A6D10BF00F06505 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/UserExecTracker.nib; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* SFCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				85B5F1911A6954F0004FE3AD /* OresmeKit.framework in Frameworks */,
+				85B5F1951A6954FB004FE3AD /* DataBasinKit.framework in Frameworks */,
+				85B5F19A1A6955C2004FE3AD /* WebServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				85B5F15C1A69540F004FE3AD /* AppController.h */,
+				85B5F15D1A69540F004FE3AD /* AppController.m */,
+				85B5F15E1A69540F004FE3AD /* BatchTracker.h */,
+				85B5F15F1A69540F004FE3AD /* BatchTracker.m */,
+				85B5F1621A69540F004FE3AD /* DBInteractiveTool.h */,
+				85B5F1631A69540F004FE3AD /* DBInteractiveTool.m */,
+				85B5F1641A69540F004FE3AD /* DBLogger.h */,
+				85B5F1651A69540F004FE3AD /* DBLogger.m */,
+				85B5F1661A69540F004FE3AD /* DBProgress.h */,
+				85B5F1671A69540F004FE3AD /* DBProgress.m */,
+				85B5F1681A69540F004FE3AD /* AsyncTracker.h */,
+				85B5F1691A69540F004FE3AD /* AsyncTracker.m */,
+				85B5F16C1A69540F004FE3AD /* ProcessMonitor.h */,
+				85B5F16D1A69540F004FE3AD /* ProcessMonitor.m */,
+				85B5F16E1A69540F004FE3AD /* QueryCacher.h */,
+				85B5F16F1A69540F004FE3AD /* QueryCacher.m */,
+				85B5F1721A69540F004FE3AD /* UserExecTracker.h */,
+				85B5F1731A69540F004FE3AD /* UserExecTracker.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85B5F1991A6955C2004FE3AD /* WebServices.framework */,
+				85B5F1941A6954FB004FE3AD /* DataBasinKit.framework */,
+				85B5F1901A6954F0004FE3AD /* OresmeKit.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* SFCompanion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* GDFCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = GDFCompanion;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85CBC4AD1A6E55090029684D /* QueryCacher.nib */,
+				85B5F1B71A696E48004FE3AD /* Log.nib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* SFCompanion.nib */,
+				85B5F1B21A696929004FE3AD /* AsyncTracker.nib */,
+				85EE1E9D1A6D02FA00F06505 /* ProcessMonitor.nib */,
+				85EE1EAF1A6D082B00F06505 /* BatchTracker.nib */,
+				85EE1EB51A6D10BF00F06505 /* UserExecTracker.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* SFCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SFCompanion" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFCompanion;
+			productInstallPath = "$(HOME)/Applications";
+			productName = GDFCompanion;
+			productReference = 8D1107320486CEB800E47090 /* SFCompanion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SFCompanion" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* GDFCompanion */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* SFCompanion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* SFCompanion.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				85B5F1B41A696929004FE3AD /* AsyncTracker.nib in Resources */,
+				85B5F1B91A696E48004FE3AD /* Log.nib in Resources */,
+				85EE1E9F1A6D02FA00F06505 /* ProcessMonitor.nib in Resources */,
+				85EE1EB11A6D082B00F06505 /* BatchTracker.nib in Resources */,
+				85EE1EB71A6D10BF00F06505 /* UserExecTracker.nib in Resources */,
+				85CBC4AE1A6E55090029684D /* QueryCacher.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				85B5F1741A69540F004FE3AD /* AppController.m in Sources */,
+				85B5F1751A69540F004FE3AD /* BatchTracker.m in Sources */,
+				85B5F1771A69540F004FE3AD /* DBInteractiveTool.m in Sources */,
+				85B5F1781A69540F004FE3AD /* DBLogger.m in Sources */,
+				85B5F1791A69540F004FE3AD /* DBProgress.m in Sources */,
+				85B5F17A1A69540F004FE3AD /* AsyncTracker.m in Sources */,
+				85B5F17C1A69540F004FE3AD /* ProcessMonitor.m in Sources */,
+				85B5F17D1A69540F004FE3AD /* QueryCacher.m in Sources */,
+				85B5F17F1A69540F004FE3AD /* UserExecTracker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* SFCompanion.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = SFCompanion.nib;
+			sourceTree = "<group>";
+		};
+		85B5F1B21A696929004FE3AD /* AsyncTracker.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85B5F1B31A696929004FE3AD /* English */,
+			);
+			name = AsyncTracker.nib;
+			sourceTree = "<group>";
+		};
+		85B5F1B71A696E48004FE3AD /* Log.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85B5F1B81A696E48004FE3AD /* English */,
+			);
+			name = Log.nib;
+			sourceTree = "<group>";
+		};
+		85CBC4AD1A6E55090029684D /* QueryCacher.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85CBC4941A6E4E350029684D /* English */,
+			);
+			name = QueryCacher.nib;
+			sourceTree = "<group>";
+		};
+		85EE1E9D1A6D02FA00F06505 /* ProcessMonitor.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85EE1E9E1A6D02FA00F06505 /* English */,
+			);
+			name = ProcessMonitor.nib;
+			sourceTree = "<group>";
+		};
+		85EE1EAF1A6D082B00F06505 /* BatchTracker.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85EE1EB01A6D082B00F06505 /* English */,
+			);
+			name = BatchTracker.nib;
+			sourceTree = "<group>";
+		};
+		85EE1EB51A6D10BF00F06505 /* UserExecTracker.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85EE1EB61A6D10BF00F06505 /* English */,
+			);
+			name = UserExecTracker.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PRODUCT_NAME = SFCompanion;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PRODUCT_NAME = GDFCompanion;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SFCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SFCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

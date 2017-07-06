@@ -1,0 +1,63 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    AppController = {
+	Actions = (
+	    "prefCancel:",
+	    "prefOk:",
+	    "doLogin:",
+	    "showFutureCounter:",
+	    "showBatchTracker:",
+	    "showUserExecTracker:",
+	    "showD153Verifier:",
+	    "showPrintTester:",
+	    "showProcessMonitor:",
+	    "showQueryCacher:",
+	    "showRedeployer:",
+	    "showLog:"
+	);
+	Outlets = (
+	    faultPanel,
+	    faultTextView,
+	    prefPanel,
+	    prefChoiceScroll,
+	    prefPanelView,
+	    connPrefView,
+	    futurePrefView,
+	    fieldUserName,
+	    fieldPassword,
+	    fieldToken,
+	    popupEnvironment,
+	    fieldFutureLimit
+	);
+	Super = NSObject;
+    };
+    D153Verifier = {
+	Actions = (
+	    "verifyTIQVAccolto:"
+	);
+	Outlets = (
+	    win
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "doLogin:",
+	    "orderFrontFontPanel:",
+	    "prefCancel:",
+	    "prefOk:",
+	    "showBatchTracker:",
+	    "showD153Verifier:",
+	    "showFutureCounter:",
+	    "showLog:",
+	    "showPrefPanel:",
+	    "showPrintTester:",
+	    "showProcessMonitor:",
+	    "showQueryCacher:",
+	    "showRedeployer:",
+	    "showUserExecTracker:",
+	    "verifyTIQVAccolto:"
+	);
+	Super = NSObject;
+    };
+}
