@@ -1,7 +1,7 @@
 /*
    Project: SFCompanion
 
-   Copyright (C) 2013-2015 Free Software Foundation
+   Copyright (C) 2013-2015 Riccardo Mottola
 
    Author: Riccardo Mottola
 
