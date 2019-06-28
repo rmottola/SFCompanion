@@ -1,7 +1,7 @@
 /*
    Project: SFCompanion
 
-   Copyright (C) 2012-2015 Riccardo Mottola
+   Copyright (C) 2012-2019 Riccardo Mottola
 
    Author: Riccardo Mottola
 
@@ -37,15 +37,12 @@
 
 - (void)setSoapHandler:(DBSoap *)db
 {
-  GWSService     *serv;
-  
   // FIXME we should do this only if the new has a different session
   /* we clone the soap instance and pass the session, so that the method can run in a separate thread */
   dbs = [[DBSoap alloc] init];
-  serv = [DBSoap gwserviceForDBSoap];
+
   [dbs setSessionId:[db sessionId]];
-  [serv setURL:[db serverUrl]];  
-  [dbs setService:serv];
+  [dbs setServerURL:[db serverURL]];
   
   logger = [db logger];
 }
