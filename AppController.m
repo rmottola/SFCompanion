@@ -159,7 +159,7 @@
     url = [DBSoap loginURLTest];
  
   NS_DURING
-    [db login :url :userName :password :YES];
+    [db login :url :userName :password];
 
   NS_HANDLER
     NSLog(@"Login failed");
