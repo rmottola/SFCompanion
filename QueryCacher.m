@@ -94,6 +94,7 @@ static NSString *query2 = @"Select id From Case Where IsClosed = true";
 
   [query retain];
   [countField setStringValue:@""];
+  [iterationField setStringValue:@""];
   [logger log: LogStandard :@"[QueryCacher] Query: %@\n", query];
   iteration = 1;
   done = NO;
@@ -156,6 +157,7 @@ static NSString *query2 = @"Select id From Case Where IsClosed = true";
 
 -(void)reset
 {
+  [currProgressField setStringValue:@""];
 }
 
 -(void)setMaximumValue:(unsigned long)max
