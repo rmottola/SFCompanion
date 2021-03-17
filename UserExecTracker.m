@@ -1,7 +1,7 @@
 /*
    Project: SFCompanion
 
-   Copyright (C) 2014-2015 Riccardo Mottola
+   Copyright (C) 2014-2021 Riccardo Mottola
 
    Author: Riccardo Mottola
 
@@ -172,6 +172,12 @@
     case 1:
       query = [[query stringByAppendingString:@" from AsyncApexJob where JobType ='BatchApex' and CreatedDate >= "] stringByAppendingString: lowerQueryDate];
       break;
+    case 2:
+      query = [[query stringByAppendingString:@" from AsyncApexJob where JobType ='Queueable' and CreatedDate >= "] stringByAppendingString: lowerQueryDate];
+      break;
+    case 3:
+      query = [[query stringByAppendingString:@" from AsyncApexJob where JobType ='Schedulable' and CreatedDate >= "] stringByAppendingString: lowerQueryDate];
+      break;
     default:
       [logger log: LogStandard :@"[UserExecTracker update] Unknown Job Type selectd\n"];
     }
@@ -233,6 +239,16 @@
           query = @"select sum(JobItemsProcessed), ";
           query = [query stringByAppendingString:groupByString];
           query = [[query stringByAppendingString: @" from AsyncApexJob where JobType='BatchApex' and CreatedDate >= "] stringByAppendingString: lowerQueryDate];
+          break;
+        case 2:
+          query = @"select count(Id), ";
+          query = [query stringByAppendingString:groupByString];
+          query = [[query stringByAppendingString:@" from AsyncApexJob where JobType='Queueable' and CreatedDate >= "] stringByAppendingString: lowerQueryDate];
+          break;
+        case 3:
+          query = @"select count(Id), ";
+          query = [query stringByAppendingString:groupByString];
+          query = [[query stringByAppendingString:@" from AsyncApexJob where JobType='Schedulable' and CreatedDate >= "] stringByAppendingString: lowerQueryDate];
           break;
         default:
           [logger log: LogStandard :@"[UserExecTracker update] Unknown Job Type selectd\n"];
